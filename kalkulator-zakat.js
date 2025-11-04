@@ -62,10 +62,11 @@ tombol.addEventListener('click', function () {
   var nisab = 85;
 
   // TODO: Jika input tidak valid, tampilkan pesan error dan return
-  if (isNaN(emas) || emas <= 0) {
-    hasil.textContent = "Masukkan jumlah emasnya yg benar coyy!!"
+  if (inputGram.value === "" || emas <= 0) {
+    hasil.textContent = "Masukkan jumlah emasnya yg benar coyy!!";
     return;
   }
+
 
   // TODO: Jika emas < nisab, tampilkan "Belum wajib zakat" dan simpan ke riwayat
   if (emas < nisab) {
